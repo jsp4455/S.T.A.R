@@ -335,6 +335,33 @@
 <div id="levelText">LEVEL 1</div>
 <div id="scoreText">SCORE: 0</div>
 
+  <!-- Discord username + link paywall -->
+<div id="paywall">
+  <div class="payBox">
+    <h2>GAME LOCKED</h2>
+    <p>Join the Discord & request access</p>
+
+    <a href="https://discord.gg/UpRXeKM6z" target="_blank"
+       style="color:black; font-weight:bold; text-decoration:underline; display:block; margin-bottom:5px;">
+       Join Discord Server
+    </a>
+
+    <input id="discordName" placeholder="Your Discord Username (required)">
+
+    <textarea id="requestMsg" placeholder="Type your message here..."></textarea>
+
+    <button id="sendRequestBtn">Send Request</button>
+
+    <p id="sentNotice" style="display:none; margin-top:10px; color:black;">
+      Request sent. Wait for approval.
+    </p>
+
+    <input id="unlockCodeInput" placeholder="Enter unlock code"
+           style="margin-top:15px; display:none; width:100%; padding:10px; border-radius:10px; border:none;">
+    <button id="unlockBtn" style="display:none;">Unlock</button>
+  </div>
+</div>
+
 
 <canvas id="game" width="400" height="400"></canvas>
 
